@@ -1,0 +1,1417 @@
+{
+  "service": {
+    "service": "hp-api",
+    "serviceObject": {
+      "name": "hp-api"
+    },
+    "provider": {
+      "name": "aws",
+      "runtime": "nodejs24.x",
+      "architecture": "arm64",
+      "region": "eu-north-1",
+      "iam": {
+        "role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+      },
+      "stage": "dev",
+      "versionFunctions": true,
+      "compiledCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {
+          "GetCharactersLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-getCharacters"
+            }
+          },
+          "GetCharacterByIdLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-getCharacterById"
+            }
+          },
+          "CreateCharacterLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-createCharacter"
+            }
+          },
+          "UpdateCharactersLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-updateCharacters"
+            }
+          },
+          "DeleteCharacterLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-deleteCharacter"
+            }
+          },
+          "GetHousesLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-getHouses"
+            }
+          },
+          "GetHouseByIdLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-getHouseById"
+            }
+          },
+          "GetSpellsLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-getSpells"
+            }
+          },
+          "GetSpellByIdLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-getSpellById"
+            }
+          },
+          "AuthLogGroup": {
+            "Type": "AWS::Logs::LogGroup",
+            "Properties": {
+              "LogGroupName": "/aws/lambda/hp-api-dev-auth"
+            }
+          },
+          "GetCharactersLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-getCharacters",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "GetCharactersLogGroup"
+            ]
+          },
+          "GetCharacterByIdLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-getCharacterById",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "GetCharacterByIdLogGroup"
+            ]
+          },
+          "CreateCharacterLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-createCharacter",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "CreateCharacterLogGroup"
+            ]
+          },
+          "UpdateCharactersLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-updateCharacters",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "UpdateCharactersLogGroup"
+            ]
+          },
+          "DeleteCharacterLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-deleteCharacter",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "DeleteCharacterLogGroup"
+            ]
+          },
+          "GetHousesLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-getHouses",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "GetHousesLogGroup"
+            ]
+          },
+          "GetHouseByIdLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-getHouseById",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "GetHouseByIdLogGroup"
+            ]
+          },
+          "GetSpellsLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-getSpells",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "GetSpellsLogGroup"
+            ]
+          },
+          "GetSpellByIdLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-getSpellById",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "GetSpellByIdLogGroup"
+            ]
+          },
+          "AuthLambdaFunction": {
+            "Type": "AWS::Lambda::Function",
+            "Properties": {
+              "Code": {
+                "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              },
+              "Handler": "functions/auth/login/index.handler",
+              "Runtime": "nodejs24.x",
+              "FunctionName": "hp-api-dev-auth",
+              "MemorySize": 1024,
+              "Timeout": 6,
+              "Architectures": [
+                "arm64"
+              ],
+              "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess"
+            },
+            "DependsOn": [
+              "AuthLogGroup"
+            ]
+          },
+          "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetCharactersLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetCharacterByIdLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "UpdateCharactersLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "DeleteCharacterLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetHousesLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetHouseByIdLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "CreateCharacterLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetSpellsLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetSpellByIdLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "AuthLambdaFunction"
+              },
+              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            }
+          },
+          "HttpApi": {
+            "Type": "AWS::ApiGatewayV2::Api",
+            "Properties": {
+              "Name": "dev-hp-api",
+              "ProtocolType": "HTTP"
+            }
+          },
+          "HttpApiStage": {
+            "Type": "AWS::ApiGatewayV2::Stage",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "StageName": "$default",
+              "AutoDeploy": true,
+              "DefaultRouteSettings": {
+                "DetailedMetricsEnabled": false
+              }
+            }
+          },
+          "GetCharactersLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetCharactersLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetCharacters": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetCharactersLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetCharacters": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /characters",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetCharacters"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetCharacters"
+          },
+          "GetCharacterByIdLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetCharacterByIdLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetCharacterById": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetCharacterByIdLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetCharactersIdVar": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /characters/{id}",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetCharacterById"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetCharacterById"
+          },
+          "CreateCharacterLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "CreateCharacterLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationCreateCharacter": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"CreateCharacterLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRoutePostCharacters": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "POST /characters",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationCreateCharacter"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationCreateCharacter"
+          },
+          "UpdateCharactersLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "UpdateCharactersLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationUpdateCharacters": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"UpdateCharactersLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRoutePutCharactersIdVar": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "PUT /characters/{id}",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationUpdateCharacters"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationUpdateCharacters"
+          },
+          "DeleteCharacterLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "DeleteCharacterLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationDeleteCharacter": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"DeleteCharacterLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteDeleteCharactersIdVar": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "DELETE /characters/{id}",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationDeleteCharacter"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationDeleteCharacter"
+          },
+          "GetHousesLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetHousesLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetHouses": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetHousesLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetHouses": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /houses",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetHouses"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetHouses"
+          },
+          "GetHouseByIdLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetHouseByIdLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetHouseById": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetHouseByIdLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetHousesIdVar": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /houses/{id}",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetHouseById"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetHouseById"
+          },
+          "GetSpellsLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetSpellsLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetSpells": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetSpellsLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetSpells": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /spells",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetSpells"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetSpells"
+          },
+          "GetSpellByIdLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "GetSpellByIdLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationGetSpellById": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "$ref": "$[\"service\"][\"provider\"][\"compiledCloudFormationTemplate\"][\"Resources\"][\"GetSpellByIdLambdaPermissionHttpApi\"][\"Properties\"][\"FunctionName\"]"
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRouteGetSpellsIdVar": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "GET /spells/{id}",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationGetSpellById"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationGetSpellById"
+          }
+        },
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
+            "Export": {
+              "Name": "sls-hp-api-dev-ServerlessDeploymentBucketName"
+            }
+          },
+          "GetCharactersLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-GetCharactersLambdaFunctionQualifiedArn"
+            }
+          },
+          "GetCharacterByIdLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-GetCharacterByIdLambdaFunctionQualifiedArn"
+            }
+          },
+          "UpdateCharactersLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-UpdateCharactersLambdaFunctionQualifiedArn"
+            }
+          },
+          "DeleteCharacterLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-DeleteCharacterLambdaFunctionQualifiedArn"
+            }
+          },
+          "GetHousesLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-GetHousesLambdaFunctionQualifiedArn"
+            }
+          },
+          "GetHouseByIdLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-GetHouseByIdLambdaFunctionQualifiedArn"
+            }
+          },
+          "CreateCharacterLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
+            }
+          },
+          "GetSpellsLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-GetSpellsLambdaFunctionQualifiedArn"
+            }
+          },
+          "GetSpellByIdLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-GetSpellByIdLambdaFunctionQualifiedArn"
+            }
+          },
+          "AuthLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-AuthLambdaFunctionQualifiedArn"
+            }
+          },
+          "HttpApiId": {
+            "Description": "Id of the HTTP API",
+            "Value": {
+              "Ref": "HttpApi"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-HttpApiId"
+            }
+          },
+          "HttpApiUrl": {
+            "Description": "URL of the HTTP API",
+            "Value": {
+              "Fn::Join": [
+                "",
+                [
+                  "https://",
+                  {
+                    "Ref": "HttpApi"
+                  },
+                  ".execute-api.",
+                  {
+                    "Ref": "AWS::Region"
+                  },
+                  ".",
+                  {
+                    "Ref": "AWS::URLSuffix"
+                  }
+                ]
+              ]
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-HttpApiUrl"
+            }
+          }
+        }
+      },
+      "vpc": {}
+    },
+    "pluginsData": {},
+    "functions": {
+      "getCharacters": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/characters",
+              "method": "get"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/characters"
+          }
+        ],
+        "name": "hp-api-dev-getCharacters",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA"
+      },
+      "getCharacterById": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/characters/{id}",
+              "method": "get"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/characters/{id}"
+          }
+        ],
+        "name": "hp-api-dev-getCharacterById",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA"
+      },
+      "createCharacter": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/characters",
+              "method": "post"
+            },
+            "resolvedMethod": "POST",
+            "resolvedPath": "/characters"
+          }
+        ],
+        "name": "hp-api-dev-createCharacter",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis"
+      },
+      "updateCharacters": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/characters/{id}",
+              "method": "put"
+            },
+            "resolvedMethod": "PUT",
+            "resolvedPath": "/characters/{id}"
+          }
+        ],
+        "name": "hp-api-dev-updateCharacters",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk"
+      },
+      "deleteCharacter": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/characters/{id}",
+              "method": "delete"
+            },
+            "resolvedMethod": "DELETE",
+            "resolvedPath": "/characters/{id}"
+          }
+        ],
+        "name": "hp-api-dev-deleteCharacter",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg"
+      },
+      "getHouses": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/houses",
+              "method": "get"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/houses"
+          }
+        ],
+        "name": "hp-api-dev-getHouses",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg"
+      },
+      "getHouseById": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/houses/{id}",
+              "method": "get"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/houses/{id}"
+          }
+        ],
+        "name": "hp-api-dev-getHouseById",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA"
+      },
+      "getSpells": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/spells",
+              "method": "get"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/spells"
+          }
+        ],
+        "name": "hp-api-dev-getSpells",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs"
+      },
+      "getSpellById": {
+        "handler": "functions/index.handler",
+        "events": [
+          {
+            "httpApi": {
+              "path": "/spells/{id}",
+              "method": "get"
+            },
+            "resolvedMethod": "GET",
+            "resolvedPath": "/spells/{id}"
+          }
+        ],
+        "name": "hp-api-dev-getSpellById",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s"
+      },
+      "auth": {
+        "handler": "functions/auth/login/index.handler",
+        "events": [
+          {
+            "path": "/auth/login",
+            "method": "post",
+            "httpApi": null
+          }
+        ],
+        "name": "hp-api-dev-auth",
+        "package": {},
+        "memory": 1024,
+        "timeout": 6,
+        "runtime": "nodejs24.x",
+        "vpc": {},
+        "versionLogicalId": "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE"
+      }
+    },
+    "configValidationMode": "warn",
+    "serviceFilename": "serverless",
+    "initialServerlessConfig": {
+      "org": "minnalnh",
+      "service": "hp-api",
+      "provider": {
+        "$ref": "$[\"service\"][\"provider\"]"
+      },
+      "functions": {
+        "$ref": "$[\"service\"][\"functions\"]"
+      }
+    },
+    "appId": null,
+    "org": "minnalnh",
+    "orgId": null,
+    "layers": {},
+    "artifact": "/Users/minnahedell/Documents/GitHub/hp-api/.serverless/hp-api.zip"
+  },
+  "package": {
+    "artifactDirectoryName": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z",
+    "artifact": "hp-api.zip"
+  }
+}

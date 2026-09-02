@@ -1,0 +1,79 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: minnalnh
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: hp-api
+
+provider:
+  name: aws
+  runtime: nodejs24.x
+  architecture: arm64
+  region: eu-north-1
+  iam:
+    role: arn:aws:iam::816435462993:role/BasicLambdaAccess
+
+functions:
+  ## CHARACTERS
+  getCharacters:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /characters
+          method: get
+  getCharacterById:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /characters/{id}
+          method: get
+  createCharacter:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /characters
+          method: post
+  updateCharacters:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /characters/{id}
+          method: put
+  deleteCharacter:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /characters/{id}
+          method: delete
+
+  ## HOUSES
+  getHouses:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /houses
+          method: get
+  getHouseById:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /houses/{id}
+          method: get
+
+  ## SPELLS
+  getSpells:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /spells
+          method: get
+  getSpellById:
+    handler: functions/index.handler
+    events:
+      - httpApi:
+          path: /spells/{id}
+          method: get
+  auth:
+    handler: functions/auth/login/index.handler
+    events:
+      - httpApi:
+        path: /auth/login
+        method: post
