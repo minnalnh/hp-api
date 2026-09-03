@@ -14,31 +14,31 @@ provider:
 functions:
   ## CHARACTERS
   getCharacters:
-    handler: functions/index.handler
+    handler: functions/characters/getCharacters/index.handler
     events:
       - httpApi:
           path: /characters
           method: get
   getCharacterById:
-    handler: functions/index.handler
+    handler: functions/characters/getCharacterById/index.handler
     events:
       - httpApi:
           path: /characters/{id}
           method: get
   createCharacter:
-    handler: functions/index.handler
+    handler: functions/characters/createCharacter/index.handler
     events:
       - httpApi:
           path: /characters
           method: post
   updateCharacters:
-    handler: functions/index.handler
+    handler: functions/characters/updateCharacters/index.handler
     events:
       - httpApi:
           path: /characters/{id}
           method: put
   deleteCharacter:
-    handler: functions/index.handler
+    handler: functions/characters/deleteCharacter/index.handler
     events:
       - httpApi:
           path: /characters/{id}
@@ -46,13 +46,13 @@ functions:
 
   ## HOUSES
   getHouses:
-    handler: functions/index.handler
+    handler: functions/houses/getHouses/index.handler
     events:
       - httpApi:
           path: /houses
           method: get
   getHouseById:
-    handler: functions/index.handler
+    handler: functions/houses/getHouseById/index.handler
     events:
       - httpApi:
           path: /houses/{id}
@@ -60,13 +60,13 @@ functions:
 
   ## SPELLS
   getSpells:
-    handler: functions/index.handler
+    handler: functions/spells/getSpells/index.handler
     events:
       - httpApi:
           path: /spells
           method: get
   getSpellById:
-    handler: functions/index.handler
+    handler: functions/spells/getSpellById/index.handler
     events:
       - httpApi:
           path: /spells/{id}
@@ -75,5 +75,5 @@ functions:
     handler: functions/auth/login/index.handler
     events:
       - httpApi:
-        path: /auth/login
-        method: post
+          path: /auth/login
+          method: post

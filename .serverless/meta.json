@@ -85,9 +85,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/characters/getCharacters/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-getCharacters",
                 "MemorySize": 1024,
@@ -106,9 +106,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/characters/getCharacterById/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-getCharacterById",
                 "MemorySize": 1024,
@@ -127,9 +127,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/characters/createCharacter/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-createCharacter",
                 "MemorySize": 1024,
@@ -148,9 +148,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/characters/updateCharacters/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-updateCharacters",
                 "MemorySize": 1024,
@@ -169,9 +169,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/characters/deleteCharacter/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-deleteCharacter",
                 "MemorySize": 1024,
@@ -190,9 +190,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/houses/getHouses/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-getHouses",
                 "MemorySize": 1024,
@@ -211,9 +211,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/houses/getHouseById/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-getHouseById",
                 "MemorySize": 1024,
@@ -232,9 +232,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/spells/getSpells/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-getSpells",
                 "MemorySize": 1024,
@@ -253,9 +253,9 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
-                "Handler": "functions/index.handler",
+                "Handler": "functions/spells/getSpellById/index.handler",
                 "Runtime": "nodejs24.x",
                 "FunctionName": "hp-api-dev-getSpellById",
                 "MemorySize": 1024,
@@ -274,7 +274,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                  "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                  "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
                 },
                 "Handler": "functions/auth/login/index.handler",
                 "Runtime": "nodejs24.x",
@@ -290,104 +290,104 @@
                 "AuthLogGroup"
               ]
             },
-            "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA": {
+            "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetCharactersLambdaFunction"
                 },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
               }
             },
-            "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA": {
+            "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetCharacterByIdLambdaFunction"
                 },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
               }
             },
-            "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk": {
-              "Type": "AWS::Lambda::Version",
-              "DeletionPolicy": "Retain",
-              "Properties": {
-                "FunctionName": {
-                  "Ref": "UpdateCharactersLambdaFunction"
-                },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-              }
-            },
-            "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg": {
-              "Type": "AWS::Lambda::Version",
-              "DeletionPolicy": "Retain",
-              "Properties": {
-                "FunctionName": {
-                  "Ref": "DeleteCharacterLambdaFunction"
-                },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-              }
-            },
-            "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg": {
-              "Type": "AWS::Lambda::Version",
-              "DeletionPolicy": "Retain",
-              "Properties": {
-                "FunctionName": {
-                  "Ref": "GetHousesLambdaFunction"
-                },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-              }
-            },
-            "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA": {
-              "Type": "AWS::Lambda::Version",
-              "DeletionPolicy": "Retain",
-              "Properties": {
-                "FunctionName": {
-                  "Ref": "GetHouseByIdLambdaFunction"
-                },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-              }
-            },
-            "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis": {
+            "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "CreateCharacterLambdaFunction"
                 },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
               }
             },
-            "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs": {
+            "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA": {
+              "Type": "AWS::Lambda::Version",
+              "DeletionPolicy": "Retain",
+              "Properties": {
+                "FunctionName": {
+                  "Ref": "UpdateCharactersLambdaFunction"
+                },
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+              }
+            },
+            "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8": {
+              "Type": "AWS::Lambda::Version",
+              "DeletionPolicy": "Retain",
+              "Properties": {
+                "FunctionName": {
+                  "Ref": "DeleteCharacterLambdaFunction"
+                },
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+              }
+            },
+            "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM": {
+              "Type": "AWS::Lambda::Version",
+              "DeletionPolicy": "Retain",
+              "Properties": {
+                "FunctionName": {
+                  "Ref": "GetHousesLambdaFunction"
+                },
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+              }
+            },
+            "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4": {
+              "Type": "AWS::Lambda::Version",
+              "DeletionPolicy": "Retain",
+              "Properties": {
+                "FunctionName": {
+                  "Ref": "GetHouseByIdLambdaFunction"
+                },
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+              }
+            },
+            "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetSpellsLambdaFunction"
                 },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
               }
             },
-            "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s": {
+            "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GetSpellByIdLambdaFunction"
                 },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
               }
             },
-            "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE": {
+            "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "AuthLambdaFunction"
                 },
-                "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+                "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
               }
             },
             "HttpApi": {
@@ -1084,6 +1084,81 @@
                 }
               },
               "DependsOn": "HttpApiIntegrationGetSpellById"
+            },
+            "AuthLambdaPermissionHttpApi": {
+              "Type": "AWS::Lambda::Permission",
+              "Properties": {
+                "FunctionName": {
+                  "Fn::GetAtt": [
+                    "AuthLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "Action": "lambda:InvokeFunction",
+                "Principal": "apigateway.amazonaws.com",
+                "SourceArn": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":execute-api:",
+                      {
+                        "Ref": "AWS::Region"
+                      },
+                      ":",
+                      {
+                        "Ref": "AWS::AccountId"
+                      },
+                      ":",
+                      {
+                        "Ref": "HttpApi"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              }
+            },
+            "HttpApiIntegrationAuth": {
+              "Type": "AWS::ApiGatewayV2::Integration",
+              "Properties": {
+                "ApiId": {
+                  "Ref": "HttpApi"
+                },
+                "IntegrationType": "AWS_PROXY",
+                "IntegrationUri": {
+                  "Fn::GetAtt": [
+                    "AuthLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "PayloadFormatVersion": "2.0",
+                "TimeoutInMillis": 30000
+              }
+            },
+            "HttpApiRoutePostAuthLogin": {
+              "Type": "AWS::ApiGatewayV2::Route",
+              "Properties": {
+                "ApiId": {
+                  "Ref": "HttpApi"
+                },
+                "RouteKey": "POST /auth/login",
+                "Target": {
+                  "Fn::Join": [
+                    "/",
+                    [
+                      "integrations",
+                      {
+                        "Ref": "HttpApiIntegrationAuth"
+                      }
+                    ]
+                  ]
+                }
+              },
+              "DependsOn": "HttpApiIntegrationAuth"
             }
           },
           "Outputs": {
@@ -1096,7 +1171,7 @@
             "GetCharactersLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA"
+                "Ref": "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-GetCharactersLambdaFunctionQualifiedArn"
@@ -1105,16 +1180,25 @@
             "GetCharacterByIdLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA"
+                "Ref": "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-GetCharacterByIdLambdaFunctionQualifiedArn"
               }
             },
+            "CreateCharacterLambdaFunctionQualifiedArn": {
+              "Description": "Current Lambda function version",
+              "Value": {
+                "Ref": "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc"
+              },
+              "Export": {
+                "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
+              }
+            },
             "UpdateCharactersLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk"
+                "Ref": "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-UpdateCharactersLambdaFunctionQualifiedArn"
@@ -1123,7 +1207,7 @@
             "DeleteCharacterLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg"
+                "Ref": "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-DeleteCharacterLambdaFunctionQualifiedArn"
@@ -1132,7 +1216,7 @@
             "GetHousesLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg"
+                "Ref": "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-GetHousesLambdaFunctionQualifiedArn"
@@ -1141,25 +1225,16 @@
             "GetHouseByIdLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA"
+                "Ref": "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-GetHouseByIdLambdaFunctionQualifiedArn"
               }
             },
-            "CreateCharacterLambdaFunctionQualifiedArn": {
-              "Description": "Current Lambda function version",
-              "Value": {
-                "Ref": "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis"
-              },
-              "Export": {
-                "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
-              }
-            },
             "GetSpellsLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs"
+                "Ref": "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-GetSpellsLambdaFunctionQualifiedArn"
@@ -1168,7 +1243,7 @@
             "GetSpellByIdLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s"
+                "Ref": "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-GetSpellByIdLambdaFunctionQualifiedArn"
@@ -1177,7 +1252,7 @@
             "AuthLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE"
+                "Ref": "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE"
               },
               "Export": {
                 "Name": "sls-hp-api-dev-AuthLambdaFunctionQualifiedArn"
@@ -1223,7 +1298,7 @@
       },
       "functions": {
         "getCharacters": {
-          "handler": "functions/index.handler",
+          "handler": "functions/characters/getCharacters/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1240,10 +1315,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA"
+          "versionLogicalId": "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8"
         },
         "getCharacterById": {
-          "handler": "functions/index.handler",
+          "handler": "functions/characters/getCharacterById/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1260,10 +1335,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA"
+          "versionLogicalId": "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM"
         },
         "createCharacter": {
-          "handler": "functions/index.handler",
+          "handler": "functions/characters/createCharacter/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1280,10 +1355,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis"
+          "versionLogicalId": "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc"
         },
         "updateCharacters": {
-          "handler": "functions/index.handler",
+          "handler": "functions/characters/updateCharacters/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1300,10 +1375,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk"
+          "versionLogicalId": "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA"
         },
         "deleteCharacter": {
-          "handler": "functions/index.handler",
+          "handler": "functions/characters/deleteCharacter/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1320,10 +1395,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg"
+          "versionLogicalId": "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8"
         },
         "getHouses": {
-          "handler": "functions/index.handler",
+          "handler": "functions/houses/getHouses/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1340,10 +1415,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg"
+          "versionLogicalId": "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM"
         },
         "getHouseById": {
-          "handler": "functions/index.handler",
+          "handler": "functions/houses/getHouseById/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1360,10 +1435,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA"
+          "versionLogicalId": "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4"
         },
         "getSpells": {
-          "handler": "functions/index.handler",
+          "handler": "functions/spells/getSpells/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1380,10 +1455,10 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs"
+          "versionLogicalId": "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04"
         },
         "getSpellById": {
-          "handler": "functions/index.handler",
+          "handler": "functions/spells/getSpellById/index.handler",
           "events": [
             {
               "httpApi": {
@@ -1400,15 +1475,18 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s"
+          "versionLogicalId": "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg"
         },
         "auth": {
           "handler": "functions/auth/login/index.handler",
           "events": [
             {
-              "path": "/auth/login",
-              "method": "post",
-              "httpApi": null
+              "httpApi": {
+                "path": "/auth/login",
+                "method": "post"
+              },
+              "resolvedMethod": "POST",
+              "resolvedPath": "/auth/login"
             }
           ],
           "name": "hp-api-dev-auth",
@@ -1417,7 +1495,7 @@
           "timeout": 6,
           "runtime": "nodejs24.x",
           "vpc": {},
-          "versionLogicalId": "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE"
+          "versionLogicalId": "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE"
         }
       }
     },
@@ -1500,9 +1578,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/characters/getCharacters/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-getCharacters",
               "MemorySize": 1024,
@@ -1521,9 +1599,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/characters/getCharacterById/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-getCharacterById",
               "MemorySize": 1024,
@@ -1542,9 +1620,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/characters/createCharacter/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-createCharacter",
               "MemorySize": 1024,
@@ -1563,9 +1641,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/characters/updateCharacters/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-updateCharacters",
               "MemorySize": 1024,
@@ -1584,9 +1662,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/characters/deleteCharacter/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-deleteCharacter",
               "MemorySize": 1024,
@@ -1605,9 +1683,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/houses/getHouses/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-getHouses",
               "MemorySize": 1024,
@@ -1626,9 +1704,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/houses/getHouseById/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-getHouseById",
               "MemorySize": 1024,
@@ -1647,9 +1725,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/spells/getSpells/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-getSpells",
               "MemorySize": 1024,
@@ -1668,9 +1746,9 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
-              "Handler": "functions/index.handler",
+              "Handler": "functions/spells/getSpellById/index.handler",
               "Runtime": "nodejs24.x",
               "FunctionName": "hp-api-dev-getSpellById",
               "MemorySize": 1024,
@@ -1689,7 +1767,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-                "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+                "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
               },
               "Handler": "functions/auth/login/index.handler",
               "Runtime": "nodejs24.x",
@@ -1705,104 +1783,104 @@
               "AuthLogGroup"
             ]
           },
-          "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA": {
+          "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetCharactersLambdaFunction"
               },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
             }
           },
-          "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA": {
+          "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetCharacterByIdLambdaFunction"
               },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
             }
           },
-          "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "UpdateCharactersLambdaFunction"
-              },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-            }
-          },
-          "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "DeleteCharacterLambdaFunction"
-              },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-            }
-          },
-          "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "GetHousesLambdaFunction"
-              },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-            }
-          },
-          "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "GetHouseByIdLambdaFunction"
-              },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-            }
-          },
-          "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis": {
+          "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateCharacterLambdaFunction"
               },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
             }
           },
-          "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs": {
+          "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "UpdateCharactersLambdaFunction"
+              },
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+            }
+          },
+          "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "DeleteCharacterLambdaFunction"
+              },
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+            }
+          },
+          "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetHousesLambdaFunction"
+              },
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+            }
+          },
+          "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GetHouseByIdLambdaFunction"
+              },
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+            }
+          },
+          "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetSpellsLambdaFunction"
               },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
             }
           },
-          "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s": {
+          "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetSpellByIdLambdaFunction"
               },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
             }
           },
-          "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE": {
+          "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AuthLambdaFunction"
               },
-              "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+              "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
             }
           },
           "HttpApi": {
@@ -2499,6 +2577,81 @@
               }
             },
             "DependsOn": "HttpApiIntegrationGetSpellById"
+          },
+          "AuthLambdaPermissionHttpApi": {
+            "Type": "AWS::Lambda::Permission",
+            "Properties": {
+              "FunctionName": {
+                "Fn::GetAtt": [
+                  "AuthLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "Action": "lambda:InvokeFunction",
+              "Principal": "apigateway.amazonaws.com",
+              "SourceArn": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":execute-api:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":",
+                    {
+                      "Ref": "HttpApi"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          },
+          "HttpApiIntegrationAuth": {
+            "Type": "AWS::ApiGatewayV2::Integration",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "IntegrationType": "AWS_PROXY",
+              "IntegrationUri": {
+                "Fn::GetAtt": [
+                  "AuthLambdaFunction",
+                  "Arn"
+                ]
+              },
+              "PayloadFormatVersion": "2.0",
+              "TimeoutInMillis": 30000
+            }
+          },
+          "HttpApiRoutePostAuthLogin": {
+            "Type": "AWS::ApiGatewayV2::Route",
+            "Properties": {
+              "ApiId": {
+                "Ref": "HttpApi"
+              },
+              "RouteKey": "POST /auth/login",
+              "Target": {
+                "Fn::Join": [
+                  "/",
+                  [
+                    "integrations",
+                    {
+                      "Ref": "HttpApiIntegrationAuth"
+                    }
+                  ]
+                ]
+              }
+            },
+            "DependsOn": "HttpApiIntegrationAuth"
           }
         },
         "Outputs": {
@@ -2511,7 +2664,7 @@
           "GetCharactersLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA"
+              "Ref": "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8"
             },
             "Export": {
               "Name": "sls-hp-api-dev-GetCharactersLambdaFunctionQualifiedArn"
@@ -2520,16 +2673,25 @@
           "GetCharacterByIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA"
+              "Ref": "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM"
             },
             "Export": {
               "Name": "sls-hp-api-dev-GetCharacterByIdLambdaFunctionQualifiedArn"
             }
           },
+          "CreateCharacterLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc"
+            },
+            "Export": {
+              "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
+            }
+          },
           "UpdateCharactersLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk"
+              "Ref": "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA"
             },
             "Export": {
               "Name": "sls-hp-api-dev-UpdateCharactersLambdaFunctionQualifiedArn"
@@ -2538,7 +2700,7 @@
           "DeleteCharacterLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg"
+              "Ref": "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8"
             },
             "Export": {
               "Name": "sls-hp-api-dev-DeleteCharacterLambdaFunctionQualifiedArn"
@@ -2547,7 +2709,7 @@
           "GetHousesLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg"
+              "Ref": "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM"
             },
             "Export": {
               "Name": "sls-hp-api-dev-GetHousesLambdaFunctionQualifiedArn"
@@ -2556,25 +2718,16 @@
           "GetHouseByIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA"
+              "Ref": "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4"
             },
             "Export": {
               "Name": "sls-hp-api-dev-GetHouseByIdLambdaFunctionQualifiedArn"
             }
           },
-          "CreateCharacterLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis"
-            },
-            "Export": {
-              "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
-            }
-          },
           "GetSpellsLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs"
+              "Ref": "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04"
             },
             "Export": {
               "Name": "sls-hp-api-dev-GetSpellsLambdaFunctionQualifiedArn"
@@ -2583,7 +2736,7 @@
           "GetSpellByIdLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s"
+              "Ref": "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg"
             },
             "Export": {
               "Name": "sls-hp-api-dev-GetSpellByIdLambdaFunctionQualifiedArn"
@@ -2592,7 +2745,7 @@
           "AuthLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE"
+              "Ref": "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE"
             },
             "Export": {
               "Name": "sls-hp-api-dev-AuthLambdaFunctionQualifiedArn"
@@ -2645,7 +2798,7 @@
       "serviceProvider": null,
       "instanceParameters": null
     },
-    "serviceRawFile": "# \"org\" ensures this Service is used with the correct Serverless Framework Access Key.\norg: minnalnh\n# \"service\" is the name of this project. This will also be added to your AWS resource names.\nservice: hp-api\n\nprovider:\n  name: aws\n  runtime: nodejs24.x\n  architecture: arm64\n  region: eu-north-1\n  iam:\n    role: arn:aws:iam::816435462993:role/BasicLambdaAccess\n\nfunctions:\n  ## CHARACTERS\n  getCharacters:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: get\n  getCharacterById:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: get\n  createCharacter:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: post\n  updateCharacters:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: put\n  deleteCharacter:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: delete\n\n  ## HOUSES\n  getHouses:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /houses\n          method: get\n  getHouseById:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /houses/{id}\n          method: get\n\n  ## SPELLS\n  getSpells:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /spells\n          method: get\n  getSpellById:\n    handler: functions/index.handler\n    events:\n      - httpApi:\n          path: /spells/{id}\n          method: get\n  auth:\n    handler: functions/auth/login/index.handler\n    events:\n      - httpApi:\n        path: /auth/login\n        method: post\n",
+    "serviceRawFile": "# \"org\" ensures this Service is used with the correct Serverless Framework Access Key.\norg: minnalnh\n# \"service\" is the name of this project. This will also be added to your AWS resource names.\nservice: hp-api\n\nprovider:\n  name: aws\n  runtime: nodejs24.x\n  architecture: arm64\n  region: eu-north-1\n  iam:\n    role: arn:aws:iam::816435462993:role/BasicLambdaAccess\n\nfunctions:\n  ## CHARACTERS\n  getCharacters:\n    handler: functions/characters/getCharacters/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: get\n  getCharacterById:\n    handler: functions/characters/getCharacterById/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: get\n  createCharacter:\n    handler: functions/characters/createCharacter/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: post\n  updateCharacters:\n    handler: functions/characters/updateCharacters/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: put\n  deleteCharacter:\n    handler: functions/characters/deleteCharacter/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: delete\n\n  ## HOUSES\n  getHouses:\n    handler: functions/houses/getHouses/index.handler\n    events:\n      - httpApi:\n          path: /houses\n          method: get\n  getHouseById:\n    handler: functions/houses/getHouseById/index.handler\n    events:\n      - httpApi:\n          path: /houses/{id}\n          method: get\n\n  ## SPELLS\n  getSpells:\n    handler: functions/spells/getSpells/index.handler\n    events:\n      - httpApi:\n          path: /spells\n          method: get\n  getSpellById:\n    handler: functions/spells/getSpellById/index.handler\n    events:\n      - httpApi:\n          path: /spells/{id}\n          method: get\n  auth:\n    handler: functions/auth/login/index.handler\n    events:\n      - httpApi:\n          path: /auth/login\n          method: post\n",
     "command": [
       "deploy"
     ],
@@ -2658,44 +2811,26 @@
     "serviceProviderAwsCfStackName": "hp-api-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:eu-north-1:816435462993:stack/hp-api-dev/0fc57140-a70c-11f1-bc8e-061f0a51167f",
     "serviceProviderAwsCfStackCreated": "2026-09-02T20:22:47.215Z",
-    "serviceProviderAwsCfStackUpdated": "2026-09-02T20:32:27.165Z",
+    "serviceProviderAwsCfStackUpdated": "2026-09-03T13:05:13.862Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
+        "OutputKey": "AuthLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-auth:5",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-hp-api-dev-AuthLambdaFunctionQualifiedArn"
+      },
+      {
         "OutputKey": "CreateCharacterLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter:2",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter:7",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
       },
       {
-        "OutputKey": "GetHouseLambdaFunctionUrl",
-        "OutputValue": "https://oboobxi4kzx3g5zxb24sgy7b7e0ybxbb.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-GetHouseLambdaFunctionUrl"
-      },
-      {
-        "OutputKey": "GetHouseLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouse:2",
+        "OutputKey": "DeleteCharacterLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-deleteCharacter:5",
         "Description": "Current Lambda function version",
-        "ExportName": "sls-hp-api-dev-GetHouseLambdaFunctionQualifiedArn"
-      },
-      {
-        "OutputKey": "DeleteCharactersLambdaFunctionUrl",
-        "OutputValue": "https://vxjf7triwxybqjyxzh7effr6sm0uwyhu.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-DeleteCharactersLambdaFunctionUrl"
-      },
-      {
-        "OutputKey": "GetCharactersLambdaFunctionUrl",
-        "OutputValue": "https://uejafi7eyutx5u2377h3gladea0mmwqr.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-GetCharactersLambdaFunctionUrl"
-      },
-      {
-        "OutputKey": "GetSpellLambdaFunctionUrl",
-        "OutputValue": "https://pv6xciezk4o3lcnv7r7rfqfooi0lafmw.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-GetSpellLambdaFunctionUrl"
+        "ExportName": "sls-hp-api-dev-DeleteCharacterLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "HttpApiId",
@@ -2704,10 +2839,10 @@
         "ExportName": "sls-hp-api-dev-HttpApiId"
       },
       {
-        "OutputKey": "GetSpellLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpell:2",
+        "OutputKey": "GetHouseByIdLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouseById:5",
         "Description": "Current Lambda function version",
-        "ExportName": "sls-hp-api-dev-GetSpellLambdaFunctionQualifiedArn"
+        "ExportName": "sls-hp-api-dev-GetHouseByIdLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "ServerlessDeploymentBucketName",
@@ -2721,70 +2856,40 @@
         "ExportName": "sls-hp-api-dev-HttpApiUrl"
       },
       {
-        "OutputKey": "DeleteCharactersLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-deleteCharacters:2",
-        "Description": "Current Lambda function version",
-        "ExportName": "sls-hp-api-dev-DeleteCharactersLambdaFunctionQualifiedArn"
-      },
-      {
-        "OutputKey": "CreateCharacterLambdaFunctionUrl",
-        "OutputValue": "https://ut5nbyimc54totb6dgxlpxzfky0xplod.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-CreateCharacterLambdaFunctionUrl"
-      },
-      {
         "OutputKey": "GetCharactersLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacters:3",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacters:9",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetCharactersLambdaFunctionQualifiedArn"
       },
       {
-        "OutputKey": "GetCharacterLambdaFunctionUrl",
-        "OutputValue": "https://e3qhbdjxtt4x3pbpnoxnfszhk40ixbec.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-GetCharacterLambdaFunctionUrl"
+        "OutputKey": "GetCharacterByIdLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacterById:5",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-hp-api-dev-GetCharacterByIdLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetHousesLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouses:3",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouses:8",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetHousesLambdaFunctionQualifiedArn"
       },
       {
-        "OutputKey": "GetHousesLambdaFunctionUrl",
-        "OutputValue": "https://s3pasrewzefvgns5yehib3evdq0pwcux.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-GetHousesLambdaFunctionUrl"
+        "OutputKey": "GetSpellByIdLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpellById:5",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-hp-api-dev-GetSpellByIdLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetSpellsLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpells:2",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpells:7",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetSpellsLambdaFunctionQualifiedArn"
       },
       {
-        "OutputKey": "GetCharacterLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacter:2",
-        "Description": "Current Lambda function version",
-        "ExportName": "sls-hp-api-dev-GetCharacterLambdaFunctionQualifiedArn"
-      },
-      {
         "OutputKey": "UpdateCharactersLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-updateCharacters:2",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-updateCharacters:7",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-UpdateCharactersLambdaFunctionQualifiedArn"
-      },
-      {
-        "OutputKey": "UpdateCharactersLambdaFunctionUrl",
-        "OutputValue": "https://tcw65c3gkgjwqid3eppurs7eja0qojqj.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-UpdateCharactersLambdaFunctionUrl"
-      },
-      {
-        "OutputKey": "GetSpellsLambdaFunctionUrl",
-        "OutputValue": "https://qapjv2usms4wpqjmrg32lvvae40xkqax.lambda-url.eu-north-1.on.aws/",
-        "Description": "Lambda Function URL",
-        "ExportName": "sls-hp-api-dev-GetSpellsLambdaFunctionUrl"
       }
     ],
     "compiledCloudFormationTemplate": {
@@ -2856,9 +2961,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/characters/getCharacters/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-getCharacters",
             "MemorySize": 1024,
@@ -2877,9 +2982,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/characters/getCharacterById/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-getCharacterById",
             "MemorySize": 1024,
@@ -2898,9 +3003,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/characters/createCharacter/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-createCharacter",
             "MemorySize": 1024,
@@ -2919,9 +3024,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/characters/updateCharacters/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-updateCharacters",
             "MemorySize": 1024,
@@ -2940,9 +3045,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/characters/deleteCharacter/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-deleteCharacter",
             "MemorySize": 1024,
@@ -2961,9 +3066,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/houses/getHouses/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-getHouses",
             "MemorySize": 1024,
@@ -2982,9 +3087,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/houses/getHouseById/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-getHouseById",
             "MemorySize": 1024,
@@ -3003,9 +3108,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/spells/getSpells/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-getSpells",
             "MemorySize": 1024,
@@ -3024,9 +3129,9 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
-            "Handler": "functions/index.handler",
+            "Handler": "functions/spells/getSpellById/index.handler",
             "Runtime": "nodejs24.x",
             "FunctionName": "hp-api-dev-getSpellById",
             "MemorySize": 1024,
@@ -3045,7 +3150,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-eu-north-1-eecc7a1d-ab24",
-              "S3Key": "serverless/hp-api/dev/1788382471733-2026-09-02T20:54:31.733Z/hp-api.zip"
+              "S3Key": "serverless/hp-api/dev/1788443168769-2026-09-03T13:46:08.769Z/hp-api.zip"
             },
             "Handler": "functions/auth/login/index.handler",
             "Runtime": "nodejs24.x",
@@ -3061,104 +3166,104 @@
             "AuthLogGroup"
           ]
         },
-        "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA": {
+        "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetCharactersLambdaFunction"
             },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
           }
         },
-        "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA": {
+        "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetCharacterByIdLambdaFunction"
             },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
           }
         },
-        "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk": {
-          "Type": "AWS::Lambda::Version",
-          "DeletionPolicy": "Retain",
-          "Properties": {
-            "FunctionName": {
-              "Ref": "UpdateCharactersLambdaFunction"
-            },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-          }
-        },
-        "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg": {
-          "Type": "AWS::Lambda::Version",
-          "DeletionPolicy": "Retain",
-          "Properties": {
-            "FunctionName": {
-              "Ref": "DeleteCharacterLambdaFunction"
-            },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-          }
-        },
-        "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg": {
-          "Type": "AWS::Lambda::Version",
-          "DeletionPolicy": "Retain",
-          "Properties": {
-            "FunctionName": {
-              "Ref": "GetHousesLambdaFunction"
-            },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-          }
-        },
-        "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA": {
-          "Type": "AWS::Lambda::Version",
-          "DeletionPolicy": "Retain",
-          "Properties": {
-            "FunctionName": {
-              "Ref": "GetHouseByIdLambdaFunction"
-            },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
-          }
-        },
-        "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis": {
+        "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "CreateCharacterLambdaFunction"
             },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
           }
         },
-        "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs": {
+        "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA": {
+          "Type": "AWS::Lambda::Version",
+          "DeletionPolicy": "Retain",
+          "Properties": {
+            "FunctionName": {
+              "Ref": "UpdateCharactersLambdaFunction"
+            },
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+          }
+        },
+        "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8": {
+          "Type": "AWS::Lambda::Version",
+          "DeletionPolicy": "Retain",
+          "Properties": {
+            "FunctionName": {
+              "Ref": "DeleteCharacterLambdaFunction"
+            },
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+          }
+        },
+        "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM": {
+          "Type": "AWS::Lambda::Version",
+          "DeletionPolicy": "Retain",
+          "Properties": {
+            "FunctionName": {
+              "Ref": "GetHousesLambdaFunction"
+            },
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+          }
+        },
+        "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4": {
+          "Type": "AWS::Lambda::Version",
+          "DeletionPolicy": "Retain",
+          "Properties": {
+            "FunctionName": {
+              "Ref": "GetHouseByIdLambdaFunction"
+            },
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
+          }
+        },
+        "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetSpellsLambdaFunction"
             },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
           }
         },
-        "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s": {
+        "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GetSpellByIdLambdaFunction"
             },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
           }
         },
-        "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE": {
+        "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "AuthLambdaFunction"
             },
-            "CodeSha256": "7aeDrqDdWDBd044miBI0lZHu3rADdsdyVViBGmB82m0="
+            "CodeSha256": "5Q08x4SkSP7o4d4KvyK+WKvOfQvbI7l46irmS2EO+7w="
           }
         },
         "HttpApi": {
@@ -3855,6 +3960,81 @@
             }
           },
           "DependsOn": "HttpApiIntegrationGetSpellById"
+        },
+        "AuthLambdaPermissionHttpApi": {
+          "Type": "AWS::Lambda::Permission",
+          "Properties": {
+            "FunctionName": {
+              "Fn::GetAtt": [
+                "AuthLambdaFunction",
+                "Arn"
+              ]
+            },
+            "Action": "lambda:InvokeFunction",
+            "Principal": "apigateway.amazonaws.com",
+            "SourceArn": {
+              "Fn::Join": [
+                "",
+                [
+                  "arn:",
+                  {
+                    "Ref": "AWS::Partition"
+                  },
+                  ":execute-api:",
+                  {
+                    "Ref": "AWS::Region"
+                  },
+                  ":",
+                  {
+                    "Ref": "AWS::AccountId"
+                  },
+                  ":",
+                  {
+                    "Ref": "HttpApi"
+                  },
+                  "/*"
+                ]
+              ]
+            }
+          }
+        },
+        "HttpApiIntegrationAuth": {
+          "Type": "AWS::ApiGatewayV2::Integration",
+          "Properties": {
+            "ApiId": {
+              "Ref": "HttpApi"
+            },
+            "IntegrationType": "AWS_PROXY",
+            "IntegrationUri": {
+              "Fn::GetAtt": [
+                "AuthLambdaFunction",
+                "Arn"
+              ]
+            },
+            "PayloadFormatVersion": "2.0",
+            "TimeoutInMillis": 30000
+          }
+        },
+        "HttpApiRoutePostAuthLogin": {
+          "Type": "AWS::ApiGatewayV2::Route",
+          "Properties": {
+            "ApiId": {
+              "Ref": "HttpApi"
+            },
+            "RouteKey": "POST /auth/login",
+            "Target": {
+              "Fn::Join": [
+                "/",
+                [
+                  "integrations",
+                  {
+                    "Ref": "HttpApiIntegrationAuth"
+                  }
+                ]
+              ]
+            }
+          },
+          "DependsOn": "HttpApiIntegrationAuth"
         }
       },
       "Outputs": {
@@ -3867,7 +4047,7 @@
         "GetCharactersLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetCharactersLambdaVersionHeudSvfaquxUcSPPpOaJAysGwMGiEMaAH6tyseYA"
+            "Ref": "GetCharactersLambdaVersionLHP5w5fTfUu2hMLt00wAt6Y2vxdnTGXKpm0kRdOqy8"
           },
           "Export": {
             "Name": "sls-hp-api-dev-GetCharactersLambdaFunctionQualifiedArn"
@@ -3876,16 +4056,25 @@
         "GetCharacterByIdLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetCharacterByIdLambdaVersionUzBEUHSHXaZHduCNG8vfiQazFmGgrkyPjS3QopnrvA"
+            "Ref": "GetCharacterByIdLambdaVersionh2GGNLvxEAjFwARDDHc3Jr3RZUIDJhjIVj3tg99woM"
           },
           "Export": {
             "Name": "sls-hp-api-dev-GetCharacterByIdLambdaFunctionQualifiedArn"
           }
         },
+        "CreateCharacterLambdaFunctionQualifiedArn": {
+          "Description": "Current Lambda function version",
+          "Value": {
+            "Ref": "CreateCharacterLambdaVersionxOpZGvqRFVrrKeBKJ5mee4KRWPj9Si1EKn9xPYMJevc"
+          },
+          "Export": {
+            "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
+          }
+        },
         "UpdateCharactersLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "UpdateCharactersLambdaVersiong3d3I0BH6KDIJZM11Vek646EiEvFRzcTx10gIs0BdRk"
+            "Ref": "UpdateCharactersLambdaVersionsQWZAwhZrCe7sUvz1BSrx42LHfMqJQ5czdC4HzLRgA"
           },
           "Export": {
             "Name": "sls-hp-api-dev-UpdateCharactersLambdaFunctionQualifiedArn"
@@ -3894,7 +4083,7 @@
         "DeleteCharacterLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "DeleteCharacterLambdaVersionYpiz10DESuhKFH3k85EQtUuqONRKnt97DXCOOuTLPFg"
+            "Ref": "DeleteCharacterLambdaVersionoZ0kkhJi2vhC1ISoD3XpcchmskXv8Bdy2hbd99aVy8"
           },
           "Export": {
             "Name": "sls-hp-api-dev-DeleteCharacterLambdaFunctionQualifiedArn"
@@ -3903,7 +4092,7 @@
         "GetHousesLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetHousesLambdaVersionTve8PQlVCRhtRl4orIJVz5YEiW8aAiHY5Cb1PwHnVBg"
+            "Ref": "GetHousesLambdaVersionaCYWTItlkctUF4qjuYM2usC2vbZlGD3XQ7owYM"
           },
           "Export": {
             "Name": "sls-hp-api-dev-GetHousesLambdaFunctionQualifiedArn"
@@ -3912,25 +4101,16 @@
         "GetHouseByIdLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetHouseByIdLambdaVersionZJ5lVeF3ETBNJCaEJC1lbUrsawjm8AshCOK9DWdbDEA"
+            "Ref": "GetHouseByIdLambdaVersionaOBk0Nuw6Lbqxom7gjiK2vvJynhPVeqDNjPeYAxa4"
           },
           "Export": {
             "Name": "sls-hp-api-dev-GetHouseByIdLambdaFunctionQualifiedArn"
           }
         },
-        "CreateCharacterLambdaFunctionQualifiedArn": {
-          "Description": "Current Lambda function version",
-          "Value": {
-            "Ref": "CreateCharacterLambdaVersionAMNXWJaOf1MRdfZ3NPMbmUMd2GWKC1Wowm5o0WFis"
-          },
-          "Export": {
-            "Name": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
-          }
-        },
         "GetSpellsLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetSpellsLambdaVersion2Hp7cUmUraqtKl0CRB1qvAwMqsG3rNBncCynvSDs"
+            "Ref": "GetSpellsLambdaVersion9i0mclpYqc9GIxMwdt7Dhy2eBeaXHM5QVQ5qQSQ9w04"
           },
           "Export": {
             "Name": "sls-hp-api-dev-GetSpellsLambdaFunctionQualifiedArn"
@@ -3939,7 +4119,7 @@
         "GetSpellByIdLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GetSpellByIdLambdaVersionOMmeSLqsJp0EGOGLuJq3iic0PRMfOxmihfyp5BWxc2s"
+            "Ref": "GetSpellByIdLambdaVersioneFdvqzyFB1zfdci1rHQylluuLdvbE1ob7S9T6atCDg"
           },
           "Export": {
             "Name": "sls-hp-api-dev-GetSpellByIdLambdaFunctionQualifiedArn"
@@ -3948,7 +4128,7 @@
         "AuthLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "AuthLambdaVersionUXMPsgtFC2sXHZXpzTFT3OSBXxYQ997alZ8PI8rWFE"
+            "Ref": "AuthLambdaVersionZuFAQS7YZiGpLradjcYyGJ6Hh2Dnco81WCBCT5QTcE"
           },
           "Export": {
             "Name": "sls-hp-api-dev-AuthLambdaFunctionQualifiedArn"
