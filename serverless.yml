@@ -71,7 +71,7 @@ functions:
       - httpApi:
           path: /spells/{id}
           method: get
-  auth:
+  login:
     handler: functions/auth/login/index.handler
     events:
       - httpApi:
