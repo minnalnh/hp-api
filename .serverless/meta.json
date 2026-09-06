@@ -18,24 +18,30 @@
         "versionFunctions": true,
         "remoteFunctionData": {
           "Configuration": {
-            "FunctionName": "hp-api-dev-login",
-            "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-login",
+            "FunctionName": "hp-api-dev-createCharacter",
+            "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter",
             "Runtime": "nodejs24.x",
             "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess",
-            "Handler": "functions/auth/login/index.handler",
-            "CodeSize": 1906874,
+            "Handler": "functions/characters/createCharacter/index.handler",
+            "CodeSize": 1908155,
             "Description": "",
             "Timeout": 6,
             "MemorySize": 1024,
-            "LastModified": "2026-09-04T08:34:27.000+0000",
-            "CodeSha256": "Mar0RroAfh8ONCmOWHC0u7s2rkkUHWY63Np0vCSsjaU=",
+            "LastModified": "2026-09-05T15:54:08.000+0000",
+            "CodeSha256": "e0OtYBRbOTDrTUyDZQYtbFE2uSZvL849dp0knCaBNBU=",
             "Version": "$LATEST",
+            "VpcConfig": {
+              "SubnetIds": [],
+              "SecurityGroupIds": [],
+              "VpcId": "",
+              "Ipv6AllowedForDualStack": false
+            },
             "KMSKeyArn": null,
             "TracingConfig": {
               "Mode": "PassThrough"
             },
             "MasterArn": null,
-            "RevisionId": "4008ff1b-aa33-4e30-96b9-91da5ac67871",
+            "RevisionId": "bdd6bf0e-1190-4b17-8b06-ba9b35af61f1",
             "State": "Active",
             "StateReason": null,
             "StateReasonCode": null,
@@ -62,7 +68,7 @@
               "LogFormat": "Text",
               "ApplicationLogLevel": null,
               "SystemLogLevel": null,
-              "LogGroup": "/aws/lambda/hp-api-dev-login"
+              "LogGroup": "/aws/lambda/hp-api-dev-createCharacter"
             },
             "Layers": [],
             "Environment": {
@@ -71,7 +77,7 @@
           },
           "Code": {
             "RepositoryType": "S3",
-            "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-login-515e901c-2f23-4bed-94f7-7f7379d4fbd6?versionId=w2SKk.X7Asa62WYkksOVGWVv4DcKgjY0&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEQaCmV1LW5vcnRoLTEiSDBGAiEA%2BW6f4xm%2B0mBY%2BKiqQfPjKsAzSSQL%2FJhVH3z94Z1NuYYCIQCf5zIESeXsr%2BqesdzFc7Kx4K9dnlgdZSztiT13YeDiDyqLAggNEAQaDDY3MTQ0MTk4MDIwMyIMj9m%2FAEhT5MsPw65oKugBzm0rRngDQhCgWIiEN%2BcoJGRDWijt9QMwijw2RSAn%2BLjrZh7SDsUHUshkhbgrUkrcH%2FxWn0Ps8m%2Bf3wz1Dc9H8bQuYWmubybXVIOj4zcTf%2B93VKuLHqtazu8WBoKYHSUQypIF%2BSkdLuKcwUKQwl78iDtc8BVOAQHLwIvuvk3BRptmnN2x%2FTDaDrZF5Zq4s3hgnhx5DuCFyQuMStjTPFlyhU21eqL8X9THNvAqnZdM%2FyeiMZQxzqU1%2BT8OFk02ln2Ay%2FadiKYhJzAIIK%2BGzG%2BbwD5tKplXevMBM8f5VXykGGT%2FgPSxIwXj2DD5lfDUBjqMAajurf6w0tcTkv0lAzB1Fw837lBw4kb5TXeg05b6XMJc1bAPQoFS1xYzzXu73lSGn94DjLUqH2Xli%2FxsOAFwrBL96yx50RMuYWwqjL0BRYdVx1ThfDL68egDtj7HMiLUn3HkNimwBLwcw5iqIDIbB4dHJ10XeXyCf%2B9wgvu35IpTQQZkwJAu6qlloQEQ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260905T151732Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMVSR7GLPIP%2F20260905%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=8147e5b42957014da05e813abd5107fd0ee52c2e523d5b7324dcebe797c846a9",
+            "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-createCharacter-af08c7cf-6bfd-4d82-a2c8-7a23b91276a1?versionId=aObCvvStAgJgsUymDj0Sjz_fZKfGmJio&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEUaCmV1LW5vcnRoLTEiSDBGAiEA4tArWTk%2FkRmrLhNrDuC4LIQXHiSX0oTOuwNBgOPNpLQCIQDJDVSYK93dow8dLWvYTj3aCfsSevmM09JVTxQruUU2sCqLAggOEAQaDDY3MTQ0MTk4MDIwMyIMWCXpuU%2FDiManwVsJKugBHF8K8tPdjCG4HuiB6dZONC2oOFyPXSFTwL5K5ufbl6p%2BNJ6%2BhimnXfXRLz8Z4kLxrUHMld0zKZkT713r5wVhWbZJY274E%2BbSr9Y0o59IZ4Lu%2BzVUY8YZaj5mYxJh%2F4d94xWJYE9LcNDwELZMB3ubmLnGc8dgVqq4KZjBl1kNLUub2r%2BTvR9ih3mbDD56zqrOZLvMyc1zn8pBX0p9ACd2%2Ba3UGWFNcq%2BByGjlpUlJVMXxl122NOCSKhtKXkUnONpYRqb5s%2B%2BN97YyF3cm24Nc9MhhgurHq%2BoRFSos0VqlAjymm4NhuuwvSjC6rvDUBjqMAbnYrkIULGwb8nr0tUwUbY79D%2FNRiSDuLBN9%2B1AlN7Jr8gNUt2VzfS48rp13q3mM9xlO4VfzmTybnaTtcQTyKZorHEaL2lE3hoWeax%2FZPBBQvcSBNz0Lfo0dPBvZwhXLdZlL%2FaiWkuis7C4H%2BAKd38iMI00GGCfYoN7rHu0DhWxD2kkFspMJ3srv9OBK&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260905T155733Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMVWZR7SE66%2F20260905%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=d6a3a7b4a8fbdd6e3e93cb3246762bff9bc184d1345cc38b36d74a1a93722978",
             "ImageUri": null,
             "ResolvedImageUri": null
           },
@@ -79,7 +85,7 @@
             "aws:cloudformation:stack-name": "hp-api-dev",
             "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-north-1:816435462993:stack/hp-api-dev/0fc57140-a70c-11f1-bc8e-061f0a51167f",
             "STAGE": "dev",
-            "aws:cloudformation:logical-id": "LoginLambdaFunction"
+            "aws:cloudformation:logical-id": "CreateCharacterLambdaFunction"
           }
         }
       },
@@ -218,24 +224,30 @@
       "versionFunctions": true,
       "remoteFunctionData": {
         "Configuration": {
-          "FunctionName": "hp-api-dev-login",
-          "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-login",
+          "FunctionName": "hp-api-dev-createCharacter",
+          "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter",
           "Runtime": "nodejs24.x",
           "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess",
-          "Handler": "functions/auth/login/index.handler",
-          "CodeSize": 1906874,
+          "Handler": "functions/characters/createCharacter/index.handler",
+          "CodeSize": 1908155,
           "Description": "",
           "Timeout": 6,
           "MemorySize": 1024,
-          "LastModified": "2026-09-04T08:34:27.000+0000",
-          "CodeSha256": "Mar0RroAfh8ONCmOWHC0u7s2rkkUHWY63Np0vCSsjaU=",
+          "LastModified": "2026-09-05T15:54:08.000+0000",
+          "CodeSha256": "e0OtYBRbOTDrTUyDZQYtbFE2uSZvL849dp0knCaBNBU=",
           "Version": "$LATEST",
+          "VpcConfig": {
+            "SubnetIds": [],
+            "SecurityGroupIds": [],
+            "VpcId": "",
+            "Ipv6AllowedForDualStack": false
+          },
           "KMSKeyArn": null,
           "TracingConfig": {
             "Mode": "PassThrough"
           },
           "MasterArn": null,
-          "RevisionId": "4008ff1b-aa33-4e30-96b9-91da5ac67871",
+          "RevisionId": "bdd6bf0e-1190-4b17-8b06-ba9b35af61f1",
           "State": "Active",
           "StateReason": null,
           "StateReasonCode": null,
@@ -262,7 +274,7 @@
             "LogFormat": "Text",
             "ApplicationLogLevel": null,
             "SystemLogLevel": null,
-            "LogGroup": "/aws/lambda/hp-api-dev-login"
+            "LogGroup": "/aws/lambda/hp-api-dev-createCharacter"
           },
           "Layers": [],
           "Environment": {
@@ -271,7 +283,7 @@
         },
         "Code": {
           "RepositoryType": "S3",
-          "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-login-515e901c-2f23-4bed-94f7-7f7379d4fbd6?versionId=w2SKk.X7Asa62WYkksOVGWVv4DcKgjY0&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEQaCmV1LW5vcnRoLTEiSDBGAiEA%2BW6f4xm%2B0mBY%2BKiqQfPjKsAzSSQL%2FJhVH3z94Z1NuYYCIQCf5zIESeXsr%2BqesdzFc7Kx4K9dnlgdZSztiT13YeDiDyqLAggNEAQaDDY3MTQ0MTk4MDIwMyIMj9m%2FAEhT5MsPw65oKugBzm0rRngDQhCgWIiEN%2BcoJGRDWijt9QMwijw2RSAn%2BLjrZh7SDsUHUshkhbgrUkrcH%2FxWn0Ps8m%2Bf3wz1Dc9H8bQuYWmubybXVIOj4zcTf%2B93VKuLHqtazu8WBoKYHSUQypIF%2BSkdLuKcwUKQwl78iDtc8BVOAQHLwIvuvk3BRptmnN2x%2FTDaDrZF5Zq4s3hgnhx5DuCFyQuMStjTPFlyhU21eqL8X9THNvAqnZdM%2FyeiMZQxzqU1%2BT8OFk02ln2Ay%2FadiKYhJzAIIK%2BGzG%2BbwD5tKplXevMBM8f5VXykGGT%2FgPSxIwXj2DD5lfDUBjqMAajurf6w0tcTkv0lAzB1Fw837lBw4kb5TXeg05b6XMJc1bAPQoFS1xYzzXu73lSGn94DjLUqH2Xli%2FxsOAFwrBL96yx50RMuYWwqjL0BRYdVx1ThfDL68egDtj7HMiLUn3HkNimwBLwcw5iqIDIbB4dHJ10XeXyCf%2B9wgvu35IpTQQZkwJAu6qlloQEQ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260905T151732Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMVSR7GLPIP%2F20260905%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=8147e5b42957014da05e813abd5107fd0ee52c2e523d5b7324dcebe797c846a9",
+          "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-createCharacter-af08c7cf-6bfd-4d82-a2c8-7a23b91276a1?versionId=aObCvvStAgJgsUymDj0Sjz_fZKfGmJio&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEUaCmV1LW5vcnRoLTEiSDBGAiEA4tArWTk%2FkRmrLhNrDuC4LIQXHiSX0oTOuwNBgOPNpLQCIQDJDVSYK93dow8dLWvYTj3aCfsSevmM09JVTxQruUU2sCqLAggOEAQaDDY3MTQ0MTk4MDIwMyIMWCXpuU%2FDiManwVsJKugBHF8K8tPdjCG4HuiB6dZONC2oOFyPXSFTwL5K5ufbl6p%2BNJ6%2BhimnXfXRLz8Z4kLxrUHMld0zKZkT713r5wVhWbZJY274E%2BbSr9Y0o59IZ4Lu%2BzVUY8YZaj5mYxJh%2F4d94xWJYE9LcNDwELZMB3ubmLnGc8dgVqq4KZjBl1kNLUub2r%2BTvR9ih3mbDD56zqrOZLvMyc1zn8pBX0p9ACd2%2Ba3UGWFNcq%2BByGjlpUlJVMXxl122NOCSKhtKXkUnONpYRqb5s%2B%2BN97YyF3cm24Nc9MhhgurHq%2BoRFSos0VqlAjymm4NhuuwvSjC6rvDUBjqMAbnYrkIULGwb8nr0tUwUbY79D%2FNRiSDuLBN9%2B1AlN7Jr8gNUt2VzfS48rp13q3mM9xlO4VfzmTybnaTtcQTyKZorHEaL2lE3hoWeax%2FZPBBQvcSBNz0Lfo0dPBvZwhXLdZlL%2FaiWkuis7C4H%2BAKd38iMI00GGCfYoN7rHu0DhWxD2kkFspMJ3srv9OBK&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260905T155733Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMVWZR7SE66%2F20260905%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=d6a3a7b4a8fbdd6e3e93cb3246762bff9bc184d1345cc38b36d74a1a93722978",
           "ImageUri": null,
           "ResolvedImageUri": null
         },
@@ -279,7 +291,7 @@
           "aws:cloudformation:stack-name": "hp-api-dev",
           "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-north-1:816435462993:stack/hp-api-dev/0fc57140-a70c-11f1-bc8e-061f0a51167f",
           "STAGE": "dev",
-          "aws:cloudformation:logical-id": "LoginLambdaFunction"
+          "aws:cloudformation:logical-id": "CreateCharacterLambdaFunction"
         }
       }
     },
@@ -298,7 +310,7 @@
       "function"
     ],
     "options": {
-      "function": "login"
+      "function": "createCharacter"
     },
     "orgId": "ea9b7f61-5f19-4545-8919-2945623d184b",
     "orgName": "minnalnh",
