@@ -1,6 +1,6 @@
 {
   "/Users/minnahedell/Documents/GitHub/hp-api/serverless.yml": {
-    "versionFramework": "4.41.1",
+    "versionFramework": "4.42.0",
     "servicePath": "/Users/minnahedell/Documents/GitHub/hp-api/serverless.yml",
     "serviceConfigFileName": "serverless.yml",
     "service": {
@@ -18,17 +18,17 @@
         "versionFunctions": true,
         "remoteFunctionData": {
           "Configuration": {
-            "FunctionName": "hp-api-dev-createCharacter",
-            "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter",
+            "FunctionName": "hp-api-dev-getCharacters",
+            "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacters",
             "Runtime": "nodejs24.x",
             "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess",
-            "Handler": "functions/characters/createCharacter/index.handler",
-            "CodeSize": 1908155,
+            "Handler": "functions/characters/getCharacters/index.handler",
+            "CodeSize": 4922972,
             "Description": "",
             "Timeout": 6,
             "MemorySize": 1024,
-            "LastModified": "2026-09-05T15:54:08.000+0000",
-            "CodeSha256": "e0OtYBRbOTDrTUyDZQYtbFE2uSZvL849dp0knCaBNBU=",
+            "LastModified": "2026-09-11T09:49:19.000+0000",
+            "CodeSha256": "nJ3+FVQrkYAuvE5qHSh24gokcIAlM3oAFiF1Gf8IZ2I=",
             "Version": "$LATEST",
             "VpcConfig": {
               "SubnetIds": [],
@@ -41,7 +41,7 @@
               "Mode": "PassThrough"
             },
             "MasterArn": null,
-            "RevisionId": "bdd6bf0e-1190-4b17-8b06-ba9b35af61f1",
+            "RevisionId": "df8fc066-111d-4476-a454-7edc91146239",
             "State": "Active",
             "StateReason": null,
             "StateReasonCode": null,
@@ -62,13 +62,13 @@
               "OptimizationStatus": "Off"
             },
             "RuntimeVersionConfig": {
-              "RuntimeVersionArn": "arn:aws:lambda:eu-north-1::runtime:b8e18ea517c3a4b8dd61fb8536eb5cff76c10fbbc3fc766e8079f3b873f7fad3"
+              "RuntimeVersionArn": "arn:aws:lambda:eu-north-1::runtime:dd09ef1b17ddb706b5ccd5facec44a9954fa6d8e003984ad01974c818c62990a"
             },
             "LoggingConfig": {
               "LogFormat": "Text",
               "ApplicationLogLevel": null,
               "SystemLogLevel": null,
-              "LogGroup": "/aws/lambda/hp-api-dev-createCharacter"
+              "LogGroup": "/aws/lambda/hp-api-dev-getCharacters"
             },
             "Layers": [],
             "Environment": {
@@ -77,7 +77,7 @@
           },
           "Code": {
             "RepositoryType": "S3",
-            "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-createCharacter-af08c7cf-6bfd-4d82-a2c8-7a23b91276a1?versionId=aObCvvStAgJgsUymDj0Sjz_fZKfGmJio&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEUaCmV1LW5vcnRoLTEiSDBGAiEA4tArWTk%2FkRmrLhNrDuC4LIQXHiSX0oTOuwNBgOPNpLQCIQDJDVSYK93dow8dLWvYTj3aCfsSevmM09JVTxQruUU2sCqLAggOEAQaDDY3MTQ0MTk4MDIwMyIMWCXpuU%2FDiManwVsJKugBHF8K8tPdjCG4HuiB6dZONC2oOFyPXSFTwL5K5ufbl6p%2BNJ6%2BhimnXfXRLz8Z4kLxrUHMld0zKZkT713r5wVhWbZJY274E%2BbSr9Y0o59IZ4Lu%2BzVUY8YZaj5mYxJh%2F4d94xWJYE9LcNDwELZMB3ubmLnGc8dgVqq4KZjBl1kNLUub2r%2BTvR9ih3mbDD56zqrOZLvMyc1zn8pBX0p9ACd2%2Ba3UGWFNcq%2BByGjlpUlJVMXxl122NOCSKhtKXkUnONpYRqb5s%2B%2BN97YyF3cm24Nc9MhhgurHq%2BoRFSos0VqlAjymm4NhuuwvSjC6rvDUBjqMAbnYrkIULGwb8nr0tUwUbY79D%2FNRiSDuLBN9%2B1AlN7Jr8gNUt2VzfS48rp13q3mM9xlO4VfzmTybnaTtcQTyKZorHEaL2lE3hoWeax%2FZPBBQvcSBNz0Lfo0dPBvZwhXLdZlL%2FaiWkuis7C4H%2BAKd38iMI00GGCfYoN7rHu0DhWxD2kkFspMJ3srv9OBK&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260905T155733Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMVWZR7SE66%2F20260905%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=d6a3a7b4a8fbdd6e3e93cb3246762bff9bc184d1345cc38b36d74a1a93722978",
+            "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-getCharacters-44eeb896-51b2-4acb-a177-6b2a774c7ddf?versionId=NXTPklgl7zE3XVQY8wB7WRy9MpOCto4p&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiSDBGAiEA5YS1ryBdr8R5ReWAvttZk2ysTER3D%2F48TVTELxHORiACIQCe%2FHM4%2FMeax2k%2FH8Z7FKpfQry8P4T2e%2F61XgEAViGgLyqUAgiQ%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAQaDDY3MTQ0MTk4MDIwMyIMMndg6slNBE3IDq2pKugB1He16GPfIxdpP9FuY5lfN%2FykIeiCbjDAufIrWrd94xlLQNKNyYDmmfOcz1RXjPj3SwW%2FJYapTjITUQ3p9kyiXcolKJtThEitn1VlWp7Ot%2BlS68X9%2FEwnJQRVR0Z1qyHnZLPRuRj8%2Bce2k2x8phGhQJyF5bizOpmxnrmQLHGgYL0YVYRMghxXooIATPOLhCo1ae%2B4ZmUjUdh3%2B2eFf8C1LXw2cX85slLesSr99bw0npIcIWCQjcboBOBdVpSoj2gOmSl4QKmvpUBdRLe0z53MDxttHU3RenbYXCw5rblQSI8FlyeMrk507jCu%2B4zVBjqMAU9zIDgDfjiq3wqL1uekdJe8ScbmczVyyyqR0O427sBZ19na3TBrv5LF8fkBsTLcBTx8OihYi62GzdQYn4UwbY8oYlq1lJYMTCPIvO%2Fato3EWzVtM0jYNvXmWiR1LgXJsxSm1OfXBDD8I8lwD1%2BJnDLIsv5MaXxbsjzMC%2BiwwFDRZKyRJC5YJ7pd2ITH&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260911T095737Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMV5ILGOJ2M%2F20260911%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=d8f699a966f2e69fa98a8d4d95f84f55440c403fe642cc932ff5db4490443b90",
             "ImageUri": null,
             "ResolvedImageUri": null
           },
@@ -85,7 +85,7 @@
             "aws:cloudformation:stack-name": "hp-api-dev",
             "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-north-1:816435462993:stack/hp-api-dev/0fc57140-a70c-11f1-bc8e-061f0a51167f",
             "STAGE": "dev",
-            "aws:cloudformation:logical-id": "CreateCharacterLambdaFunction"
+            "aws:cloudformation:logical-id": "GetCharactersLambdaFunction"
           }
         }
       },
@@ -210,6 +210,29 @@
           ],
           "name": "hp-api-dev-login"
         }
+      },
+      "resources": {
+        "Resources": {
+          "CharactersTable": {
+            "Type": "AWS::DynamoDB::Table",
+            "Properties": {
+              "TableName": "hp-characters",
+              "BillingMode": "PAY_PER_REQUEST",
+              "AttributeDefinitions": [
+                {
+                  "AttributeName": "id",
+                  "AttributeType": "S"
+                }
+              ],
+              "KeySchema": [
+                {
+                  "AttributeName": "id",
+                  "KeyType": "HASH"
+                }
+              ]
+            }
+          }
+        }
       }
     },
     "provider": {
@@ -224,17 +247,17 @@
       "versionFunctions": true,
       "remoteFunctionData": {
         "Configuration": {
-          "FunctionName": "hp-api-dev-createCharacter",
-          "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter",
+          "FunctionName": "hp-api-dev-getCharacters",
+          "FunctionArn": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacters",
           "Runtime": "nodejs24.x",
           "Role": "arn:aws:iam::816435462993:role/BasicLambdaAccess",
-          "Handler": "functions/characters/createCharacter/index.handler",
-          "CodeSize": 1908155,
+          "Handler": "functions/characters/getCharacters/index.handler",
+          "CodeSize": 4922972,
           "Description": "",
           "Timeout": 6,
           "MemorySize": 1024,
-          "LastModified": "2026-09-05T15:54:08.000+0000",
-          "CodeSha256": "e0OtYBRbOTDrTUyDZQYtbFE2uSZvL849dp0knCaBNBU=",
+          "LastModified": "2026-09-11T09:49:19.000+0000",
+          "CodeSha256": "nJ3+FVQrkYAuvE5qHSh24gokcIAlM3oAFiF1Gf8IZ2I=",
           "Version": "$LATEST",
           "VpcConfig": {
             "SubnetIds": [],
@@ -247,7 +270,7 @@
             "Mode": "PassThrough"
           },
           "MasterArn": null,
-          "RevisionId": "bdd6bf0e-1190-4b17-8b06-ba9b35af61f1",
+          "RevisionId": "df8fc066-111d-4476-a454-7edc91146239",
           "State": "Active",
           "StateReason": null,
           "StateReasonCode": null,
@@ -268,13 +291,13 @@
             "OptimizationStatus": "Off"
           },
           "RuntimeVersionConfig": {
-            "RuntimeVersionArn": "arn:aws:lambda:eu-north-1::runtime:b8e18ea517c3a4b8dd61fb8536eb5cff76c10fbbc3fc766e8079f3b873f7fad3"
+            "RuntimeVersionArn": "arn:aws:lambda:eu-north-1::runtime:dd09ef1b17ddb706b5ccd5facec44a9954fa6d8e003984ad01974c818c62990a"
           },
           "LoggingConfig": {
             "LogFormat": "Text",
             "ApplicationLogLevel": null,
             "SystemLogLevel": null,
-            "LogGroup": "/aws/lambda/hp-api-dev-createCharacter"
+            "LogGroup": "/aws/lambda/hp-api-dev-getCharacters"
           },
           "Layers": [],
           "Environment": {
@@ -283,7 +306,7 @@
         },
         "Code": {
           "RepositoryType": "S3",
-          "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-createCharacter-af08c7cf-6bfd-4d82-a2c8-7a23b91276a1?versionId=aObCvvStAgJgsUymDj0Sjz_fZKfGmJio&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEUaCmV1LW5vcnRoLTEiSDBGAiEA4tArWTk%2FkRmrLhNrDuC4LIQXHiSX0oTOuwNBgOPNpLQCIQDJDVSYK93dow8dLWvYTj3aCfsSevmM09JVTxQruUU2sCqLAggOEAQaDDY3MTQ0MTk4MDIwMyIMWCXpuU%2FDiManwVsJKugBHF8K8tPdjCG4HuiB6dZONC2oOFyPXSFTwL5K5ufbl6p%2BNJ6%2BhimnXfXRLz8Z4kLxrUHMld0zKZkT713r5wVhWbZJY274E%2BbSr9Y0o59IZ4Lu%2BzVUY8YZaj5mYxJh%2F4d94xWJYE9LcNDwELZMB3ubmLnGc8dgVqq4KZjBl1kNLUub2r%2BTvR9ih3mbDD56zqrOZLvMyc1zn8pBX0p9ACd2%2Ba3UGWFNcq%2BByGjlpUlJVMXxl122NOCSKhtKXkUnONpYRqb5s%2B%2BN97YyF3cm24Nc9MhhgurHq%2BoRFSos0VqlAjymm4NhuuwvSjC6rvDUBjqMAbnYrkIULGwb8nr0tUwUbY79D%2FNRiSDuLBN9%2B1AlN7Jr8gNUt2VzfS48rp13q3mM9xlO4VfzmTybnaTtcQTyKZorHEaL2lE3hoWeax%2FZPBBQvcSBNz0Lfo0dPBvZwhXLdZlL%2FaiWkuis7C4H%2BAKd38iMI00GGCfYoN7rHu0DhWxD2kkFspMJ3srv9OBK&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260905T155733Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMVWZR7SE66%2F20260905%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=d6a3a7b4a8fbdd6e3e93cb3246762bff9bc184d1345cc38b36d74a1a93722978",
+          "Location": "https://awslambda-eu-n-1-tasks.s3.eu-north-1.amazonaws.com/snapshots/816435462993/hp-api-dev-getCharacters-44eeb896-51b2-4acb-a177-6b2a774c7ddf?versionId=NXTPklgl7zE3XVQY8wB7WRy9MpOCto4p&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiSDBGAiEA5YS1ryBdr8R5ReWAvttZk2ysTER3D%2F48TVTELxHORiACIQCe%2FHM4%2FMeax2k%2FH8Z7FKpfQry8P4T2e%2F61XgEAViGgLyqUAgiQ%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAQaDDY3MTQ0MTk4MDIwMyIMMndg6slNBE3IDq2pKugB1He16GPfIxdpP9FuY5lfN%2FykIeiCbjDAufIrWrd94xlLQNKNyYDmmfOcz1RXjPj3SwW%2FJYapTjITUQ3p9kyiXcolKJtThEitn1VlWp7Ot%2BlS68X9%2FEwnJQRVR0Z1qyHnZLPRuRj8%2Bce2k2x8phGhQJyF5bizOpmxnrmQLHGgYL0YVYRMghxXooIATPOLhCo1ae%2B4ZmUjUdh3%2B2eFf8C1LXw2cX85slLesSr99bw0npIcIWCQjcboBOBdVpSoj2gOmSl4QKmvpUBdRLe0z53MDxttHU3RenbYXCw5rblQSI8FlyeMrk507jCu%2B4zVBjqMAU9zIDgDfjiq3wqL1uekdJe8ScbmczVyyyqR0O427sBZ19na3TBrv5LF8fkBsTLcBTx8OihYi62GzdQYn4UwbY8oYlq1lJYMTCPIvO%2Fato3EWzVtM0jYNvXmWiR1LgXJsxSm1OfXBDD8I8lwD1%2BJnDLIsv5MaXxbsjzMC%2BiwwFDRZKyRJC5YJ7pd2ITH&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260911T095737Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZYVIPRMV5ILGOJ2M%2F20260911%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=d8f699a966f2e69fa98a8d4d95f84f55440c403fe642cc932ff5db4490443b90",
           "ImageUri": null,
           "ResolvedImageUri": null
         },
@@ -291,7 +314,7 @@
           "aws:cloudformation:stack-name": "hp-api-dev",
           "aws:cloudformation:stack-id": "arn:aws:cloudformation:eu-north-1:816435462993:stack/hp-api-dev/0fc57140-a70c-11f1-bc8e-061f0a51167f",
           "STAGE": "dev",
-          "aws:cloudformation:logical-id": "CreateCharacterLambdaFunction"
+          "aws:cloudformation:logical-id": "GetCharactersLambdaFunction"
         }
       }
     },
@@ -304,13 +327,13 @@
       "serviceProvider": null,
       "instanceParameters": null
     },
-    "serviceRawFile": "# \"org\" ensures this Service is used with the correct Serverless Framework Access Key.\norg: minnalnh\n# \"service\" is the name of this project. This will also be added to your AWS resource names.\nservice: hp-api\n\nprovider:\n  name: aws\n  runtime: nodejs24.x\n  architecture: arm64\n  region: eu-north-1\n  iam:\n    role: arn:aws:iam::816435462993:role/BasicLambdaAccess\n\nfunctions:\n  ## CHARACTERS\n  getCharacters:\n    handler: functions/characters/getCharacters/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: get\n  getCharacterById:\n    handler: functions/characters/getCharacterById/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: get\n  createCharacter:\n    handler: functions/characters/createCharacter/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: post\n  updateCharacters:\n    handler: functions/characters/updateCharacters/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: put\n  deleteCharacter:\n    handler: functions/characters/deleteCharacter/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: delete\n\n  ## HOUSES\n  getHouses:\n    handler: functions/houses/getHouses/index.handler\n    events:\n      - httpApi:\n          path: /houses\n          method: get\n  getHouseById:\n    handler: functions/houses/getHouseById/index.handler\n    events:\n      - httpApi:\n          path: /houses/{id}\n          method: get\n\n  ## SPELLS\n  getSpells:\n    handler: functions/spells/getSpells/index.handler\n    events:\n      - httpApi:\n          path: /spells\n          method: get\n  getSpellById:\n    handler: functions/spells/getSpellById/index.handler\n    events:\n      - httpApi:\n          path: /spells/{id}\n          method: get\n  login:\n    handler: functions/auth/login/index.handler\n    events:\n      - httpApi:\n          path: /auth/login\n          method: post\n",
+    "serviceRawFile": "# \"org\" ensures this Service is used with the correct Serverless Framework Access Key.\norg: minnalnh\n# \"service\" is the name of this project. This will also be added to your AWS resource names.\nservice: hp-api\n\nprovider:\n  name: aws\n  runtime: nodejs24.x\n  architecture: arm64\n  region: eu-north-1\n  iam:\n    role: arn:aws:iam::816435462993:role/BasicLambdaAccess\n\nfunctions:\n  ## CHARACTERS\n  getCharacters:\n    handler: functions/characters/getCharacters/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: get\n  getCharacterById:\n    handler: functions/characters/getCharacterById/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: get\n  createCharacter:\n    handler: functions/characters/createCharacter/index.handler\n    events:\n      - httpApi:\n          path: /characters\n          method: post\n  updateCharacters:\n    handler: functions/characters/updateCharacters/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: put\n  deleteCharacter:\n    handler: functions/characters/deleteCharacter/index.handler\n    events:\n      - httpApi:\n          path: /characters/{id}\n          method: delete\n\n  ## HOUSES\n  getHouses:\n    handler: functions/houses/getHouses/index.handler\n    events:\n      - httpApi:\n          path: /houses\n          method: get\n  getHouseById:\n    handler: functions/houses/getHouseById/index.handler\n    events:\n      - httpApi:\n          path: /houses/{id}\n          method: get\n\n  ## SPELLS\n  getSpells:\n    handler: functions/spells/getSpells/index.handler\n    events:\n      - httpApi:\n          path: /spells\n          method: get\n  getSpellById:\n    handler: functions/spells/getSpellById/index.handler\n    events:\n      - httpApi:\n          path: /spells/{id}\n          method: get\n  login:\n    handler: functions/auth/login/index.handler\n    events:\n      - httpApi:\n          path: /auth/login\n          method: post\n\nresources:\n  Resources:\n    CharactersTable:\n      Type: AWS::DynamoDB::Table\n      Properties:\n        TableName: hp-characters\n        BillingMode: PAY_PER_REQUEST\n        AttributeDefinitions:\n          - AttributeName: id\n            AttributeType: S\n        KeySchema:\n          - AttributeName: id\n            KeyType: HASH\n",
     "command": [
       "deploy",
       "function"
     ],
     "options": {
-      "function": "createCharacter"
+      "function": "getCharacters"
     },
     "orgId": "ea9b7f61-5f19-4545-8919-2945623d184b",
     "orgName": "minnalnh",
@@ -320,18 +343,18 @@
     "serviceProviderAwsCfStackName": "hp-api-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:eu-north-1:816435462993:stack/hp-api-dev/0fc57140-a70c-11f1-bc8e-061f0a51167f",
     "serviceProviderAwsCfStackCreated": "2026-09-02T20:22:47.215Z",
-    "serviceProviderAwsCfStackUpdated": "2026-09-04T08:34:19.162Z",
+    "serviceProviderAwsCfStackUpdated": "2026-09-11T09:49:11.383Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "CreateCharacterLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter:15",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-createCharacter:18",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-CreateCharacterLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "DeleteCharacterLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-deleteCharacter:13",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-deleteCharacter:16",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-DeleteCharacterLambdaFunctionQualifiedArn"
       },
@@ -343,7 +366,7 @@
       },
       {
         "OutputKey": "GetHouseByIdLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouseById:13",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouseById:16",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetHouseByIdLambdaFunctionQualifiedArn"
       },
@@ -360,43 +383,43 @@
       },
       {
         "OutputKey": "GetCharactersLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacters:17",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacters:20",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetCharactersLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetCharacterByIdLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacterById:13",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getCharacterById:16",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetCharacterByIdLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetHousesLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouses:16",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getHouses:19",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetHousesLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetSpellByIdLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpellById:13",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpellById:16",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetSpellByIdLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GetSpellsLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpells:15",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-getSpells:18",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-GetSpellsLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "UpdateCharactersLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-updateCharacters:15",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-updateCharacters:18",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-UpdateCharactersLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "LoginLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-login:7",
+        "OutputValue": "arn:aws:lambda:eu-north-1:816435462993:function:hp-api-dev-login:10",
         "Description": "Current Lambda function version",
         "ExportName": "sls-hp-api-dev-LoginLambdaFunctionQualifiedArn"
       }
